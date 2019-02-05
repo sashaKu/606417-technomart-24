@@ -4,45 +4,66 @@
     font-style: normal;
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'Cuprum';
     src: url('../fonts/CuprumBold.woff2') format('woff2');
     font-style: normal;
     font-weight: 700;
 }
+
 @font-face {
     font-family: 'Cuprum';
     src: url('../fonts/CuprumItalic.woff2') format('woff2');
     font-style: italic;
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'PT Sans';
     src: url('../fonts/PTSans.woff2') format('woff2');
     font-style: normal;
     font-weight: 400;
 }
+
 @font-face {
     font-family: 'PT Sans';
     src: url('../fonts/PTSansBold.woff2') format('woff2');
     font-style: normal;
     font-weight: 700;
 }
+
 body {
     margin: 0;
     padding: 0;
     font-family: 'Cuprum', Arial, sans-serif;
     background-color: #ffffff;
 }
+
 a {
     text-decoration: none;
 }
+
 .header-top {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-size: 17px;
+    line-height: 22px;
     background-color: #293449;
 }
-.header-search input {
+
+.header-search {
     background-color: #293449;
 }
+
+.header-search:hover {
+    background-color: #212a3a;
+}
+
+.header-search:focus,
+.header-search:active {
+    background-color: #ffffff;
+}
+
 .header-search input::-webkit-input-placeholder {
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 17px;
@@ -51,6 +72,7 @@ a {
     color: #ffffff;
     background-color: #293449;
 }
+
 .header-search input::-moz-placeholder {
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 17px;
@@ -59,6 +81,7 @@ a {
     color: #ffffff;
     background-color: #293449;
 }
+
 .header-search input:-ms-input-placeholder {
     font-family: 'Cuprum', Arial, sans-serif;
     font-size: 17px;
@@ -66,4 +89,42 @@ a {
     font-weight: 400;
     color: #ffffff;
     background-color: #293449;
+}
+
+.header-bookmark,
+.header-basket,
+.header-order {
+    color: #ffffff;
+}
+
+.header-bookmark:hover,
+.header-basket:hover,
+.header-bookmark:focus,
+.header-basket:focus {
+    color: #ffffff;
+    background-color: #212a3a;
+}
+
+.header-bookmark:active,
+.header-basket:active {
+    color: rgba(255, 255, 255, 0.6);
+    background-color: #161d29;
+}
+
+.header-order {
+    background-color: #63a63e;
+}
+
+.header-order:hover,
+.header-order:focus {
+    background-color: #5fbb2d;
+}
+
+.header-order:active {
+    color: rgba(255, 255, 255, 0.5);
+    background-color: #518534;
+}
+
+.header-title {
+
 }
