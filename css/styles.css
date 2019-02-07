@@ -37,11 +37,21 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: 400;
+    font-style: normal;
     background-color: #ffffff;
 }
 
 a {
     text-decoration: none;
+}
+
+button {
+    font-size: 14px;
+    line-height: 18px;
+    color: #ffffff;
+    background-color: #ee3643;
+    text-transform: uppercase;
 }
 
 .header-top {
@@ -126,5 +136,108 @@ a {
 }
 
 .header-title {
+    font-style: italic;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ee3643;
+}
 
+.address a {
+    font-size: 21px;
+    line-height: 27px;
+    color: #e9292a;
+}
+
+.address p {
+    font-size: 14px;
+    line-height: 18px;
+    color: #32425c;
+}
+
+.header-authorization a {
+    font-size: 21px;
+    line-height: 27px;
+    color: #000000;
+}
+
+.header-authorization a:hover,
+.header-authorization a:focus {
+    color: #ee3643;
+}
+
+.header-authorization a:active {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.header-navigation {
+    background-color: #32425c;
+}
+
+.header-navigation a {
+    font-size: 17px;
+    line-height: 22px;
+    color: #ffffff;
+}
+
+.header-navigation li:hover,
+.header-navigation li:focus {
+    background-color: #293449;
+}
+
+.header-navigation li:active {
+    background-color: #1d2739;
+}
+
+.header-navigation a:hover,
+.header-navigation a:focus {
+    color: #ffffff;
+}
+
+.header-navigation a:active {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.advantage-list li:nth-child(1) {
+    background-color: #ffbf47;
+}
+
+.advantage-list li:nth-child(2) {
+    background-color: #3bbce3;
+}
+
+.advantage-list li:nth-child(3) {
+    background-color: #dc91d8;
+}
+
+.advantage-list li:nth-child(4) {
+    background-color: #8ed78f;
+}
+
+.advantage-list li:nth-child(5) {
+    background-color: #ffc047;
+}
+
+.advantage-list h3 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 31px;
+    color: #ffffff;
+}
+
+.advantage-list a {
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: uppercase;
+    color: #ffffff;
+    background-color: #000000;
+    opacity: 0.1;
+}
+
+.advantage-list a:hover,
+.advantage-list a:focus {
+    opacity: 0.2;
+}
+
+.advantage-list a:active {
+    opacity: 0.3;
 }
