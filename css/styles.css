@@ -121,6 +121,11 @@ a {
     background-color: #161d29;
 }
 
+.header-basket-current {
+    background-color: #ee3643;
+    color: #ffffff;
+}
+
 .header-order {
     background-color: #63a63e;
 }
@@ -156,7 +161,8 @@ a {
     color: #e9292a;
 }
 
-.header-authorization a {
+.header-authorization a,
+.header-user-list a {
     font-size: 21px;
     line-height: 27px;
     color: #000000;
@@ -167,8 +173,27 @@ a {
     color: #ee3643;
 }
 
-.header-authorization a:active {
+.header-authorization a:active,
+.header-user-list a:active {
     color: rgba(0, 0, 0, 0.3);
+}
+
+.header-user-sets a {
+    text-decoration: underline;
+    font-size: 16px;
+    line-height: 22px;
+    color: #32425c;
+}
+
+.header-user-sets a:hover,
+.header-user-sets a:focus {
+    text-decoration: none;
+    color: #ee3643;
+}
+
+.header-user-sets a:active {
+    text-decoration: underline;
+    color: rgba(50, 66, 92, 0.3);
 }
 
 .header-navigation {
@@ -275,32 +300,60 @@ a {
     line-height: 39px;
 }
 
-.popular-products h3 {
+.products-list h3 {
     font-weight: 700;
     font-size: 18px;
     line-height: 23px;
 }
 
-.popular-products-list span,
-.popular-products-price {
+.products-list span,
+.product-iteam-price {
     font-weight: 700;
     font-size: 17px;
     line-height: 39px;
 }
 
-.popular-products-old {
+.product-iteam-old {
     color: #a9a9a9;
     text-decoration: line-through;
 }
 
-.popular-products-price span {
+.product-iteam-price span {
     color: #ffffff;
     background-color: #ee3643;
     text-decoration: normal;
 }
 
+.button-buy {
+    color: #ffffff;
+    background-color: #63a63e;
+}
+
+.button-buy:hover,
+.button-buy:focus {
+    background-color: #5fbb2d;
+}
+
+.button-buy:active {
+    background-color: #518534;
+}
+
 .button-popular {
     background-color: #ee3643;
+}
+
+.button-cart {
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+.button-cart:hover,
+.button-cart:focus {
+
+}
+
+.button-cart:active {
+    color: rgba(50, 66, 92, 0.3);
 }
 
 .button-popular:hover,
@@ -371,6 +424,106 @@ a {
     font-weight: 400;
     font-size: 30px;
     line-height: 39px;
+}
+
+.breadcrumbs-list a {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+}
+
+.inner-page h1 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+.filter,
+.sort {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    color: #000000;
+    text-transform: uppercase;
+}
+
+.filter h2,
+.sort h2 {
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.filter-iteams legend {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 32px;
+}
+
+.producers-iteam label,
+.source-iteam label {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+.sort-iteam a {
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.sort-iteam a:hover,
+.sort-iteam a:focus {
+    color: #000000;
+}
+
+.sort-iteam a:active,
+.sort-iteam .sort-iteam-current {
+    color: #ee3643;
+}
+
+.button-filters {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.description h4 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+    text-transform: uppercase;
+}
+
+.description dl {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.pagination a {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 13px;
+    line-height: 17px;
+    text-transform: uppercase;
+}
+
+.pagination-item a {
+    color: #000000;
+    background-color: #ffffff;
+}
+
+.pagination-item a:hover,
+.pagination-item a:focus {
+
+}
+
+.pagination-item:active {
+
+}
+
+.pagination-item .pagination-item-current {
+    color: #ffffff;
+     background-color: #ee3643;
 }
 
 .navigation {
@@ -495,4 +648,10 @@ a {
     line-height: 17px;
     color: #999999;
     background-color: #ffffff;
+}
+
+.modal-add-product h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
 }
