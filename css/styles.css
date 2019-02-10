@@ -46,11 +46,11 @@ a {
     text-decoration: none;
 }
 
-button {
+.button {
+    font-family: 'Cuprum', Arial, sans-serif;
     font-size: 14px;
     line-height: 18px;
     color: #ffffff;
-    background-color: #ee3643;
     text-transform: uppercase;
 }
 
@@ -142,16 +142,18 @@ button {
     color: #ee3643;
 }
 
-.address a {
-    font-size: 21px;
-    line-height: 27px;
-    color: #e9292a;
-}
-
-.address p {
+.header-address {
+    font-style: normal;
     font-size: 14px;
     line-height: 18px;
     color: #32425c;
+}
+
+.header-address a {
+    font-style: normal;
+    font-size: 21px;
+    line-height: 27px;
+    color: #e9292a;
 }
 
 .header-authorization a {
@@ -197,6 +199,10 @@ button {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.advantage-list {
+    color: #ffffff;
+}
+
 .advantage-list li:nth-child(1) {
     background-color: #ffbf47;
 }
@@ -221,23 +227,272 @@ button {
     font-weight: 700;
     font-size: 24px;
     line-height: 31px;
+}
+
+.button-advantage {
+    box-shadow: inset 0px 0px 150px 150px rgba(0, 0, 0, 0.1);
+}
+
+.button-advantage:hover,
+.button-advantage:focus {
+    box-shadow: inset 0px 0px 150px 150px rgba(0, 0, 0, 0.2);
+}
+
+.button-advantage:active {
+    box-shadow: inset 0px 0px 150px 150px rgba(0, 0, 0, 0.3);
+}
+
+.advantage-slider h3 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 45px;
+}
+
+.advantage-slider p {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.button-slider {
+    background-color: #ee3643;
+}
+
+.button-slider:hover,
+.button-slider:focus {
+    background-color: #ca2c37;
+}
+
+.button-slider:active {
+    background-color: #ba2732;
+}
+
+.popular-products h2,
+.popular-producers h2,
+.services h2,
+.company h2 {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.popular-products h3 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.popular-products-list span,
+.popular-products-price {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 39px;
+}
+
+.popular-products-old {
+    color: #a9a9a9;
+    text-decoration: line-through;
+}
+
+.popular-products-price span {
+    color: #ffffff;
+    background-color: #ee3643;
+    text-decoration: normal;
+}
+
+.button-popular {
+    background-color: #ee3643;
+}
+
+.button-popular:hover,
+.button-popular:focus {
+    background-color: #ca2c37;
+}
+
+.button-popular:active {
+    background-color: #ba2732;
+}
+
+.services {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    background-color: #f4f8f9;
+}
+
+.services h2 {
+    font-family: 'Cuprum', Arial, sans-serif;
+}
+
+.services-list {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 27px;
+    color: #ffffff;
+    background-color: #32425c;
+}
+
+.services-item:hover,
+.services-item:focus {
+    background-color: #293449;
+}
+
+.services-item-current {
+    color: #32425c;
+    background-color: #ffffff;
+}
+
+.services-description h3 {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 36px;
+    color: #32425c;
+}
+
+.company-advantages,
+.company-delivery {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+}
+
+.company-list {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.company-delivery-title {
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 39px;
+}
+
+.navigation {
+    font-size: 18px;
+    line-height: 23px;
+    color: #f1f5f7;
+    background-color: #32425c;
+}
+
+.navigation-address {
+    font-style: normal;
+}
+
+.navigation-address a {
+    font-style: normal;
+    color: #f1f5f7;
+}
+
+.navigation-site-list a {
+    color: #f1f5f7;
+}
+
+.navigation-site-list a:hover,
+.navigation-site-list a:focus {
+    text-decoration: underline;
+}
+
+.navigation-site-list a:active {
+    text-decoration: none;
+    color: rgba(241, 245, 247, 0.5);
+}
+
+.navigation-catalog-list a {
+    color: #ffd180;
+}
+
+.navigation-catalog-list a:hover,
+.navigation-catalog-list a:focus {
+    text-decoration: underline;
+}
+
+.navigation-catalog-list a:active {
+    text-decoration: none;
+    color: rgba(255, 209, 128, 0.5);
+}
+
+.main-footer {
+    font-size: 16px;
+    line-height: 21px;
+    background-color: #293449;
     color: #ffffff;
 }
 
-.advantage-list a {
-    font-size: 14px;
-    line-height: 18px;
-    text-transform: uppercase;
-    color: #ffffff;
-    background-color: #000000;
-    opacity: 0.1;
+.footer-support a {
+    color: #ffd180;
 }
 
-.advantage-list a:hover,
-.advantage-list a:focus {
-    opacity: 0.2;
+.footer-support a:hover,
+.footer-support a:focus {
+    text-decoration: underline;
 }
 
-.advantage-list a:active {
-    opacity: 0.3;
+.footer-support a:active {
+    text-decoration: none;
+    color: #ee3643;
+}
+
+.write {
+    font-size: 18px;
+    line-height: 23px;
+}
+
+.write-item input::-webkit-input-placeholder {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #999999;
+    background-color: #ffffff;
+}
+
+.write-item input::-moz-placeholder {
+  font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    color: #999999;
+    background-color: #ffffff;
+}
+
+.write-item input:-ms-input-placeholder {
+  font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #999999;
+    background-color: #ffffff;
+}
+
+.write-area textarea::-webkit-input-placeholder {
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #999999;
+    background-color: #ffffff;
+}
+
+.write-area textarea::-moz-placeholder {
+  font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 17px;
+    color: #999999;
+    background-color: #ffffff;
+}
+
+.write-area textarea:-ms-input-placeholder {
+  font-family: 'PT Sans', Arial, sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 17px;
+    color: #999999;
+    background-color: #ffffff;
 }
