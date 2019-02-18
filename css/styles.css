@@ -544,6 +544,7 @@ img {
 
 .popular-products {
     display: flex;
+    margin-bottom: 21px;
     position: relative;
     flex-direction: column-reverse;
 }
@@ -564,8 +565,8 @@ img {
     left: 29px;
 }
 
-.popular-products-title {
-  margin-bottom: 21px;
+.popular-title {
+    margin-bottom: 21px;
     background-color: #f9f5f0;
 }
 
@@ -744,6 +745,50 @@ img {
 
 .button-popular:active {
     background-color: #ba2732;
+}
+
+.popular-producers {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+}
+
+.popular-producers h2 {
+    position: absolute;
+    top: 0;
+    left: 29px;
+}
+
+.popular-producers-list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    list-style: none;
+
+}
+
+.popular-producers-item {
+    display: flex;
+    width: 220px;
+    height: 145px;
+    margin-bottom: 20px;
+    align-items: center;
+    justify-content: center;
+    outline: 1px solid #eaeaea;
+
+}
+
+.popular-producers-item:hover,
+.popular-producers-item:focus {
+    box-shadow: 0px 10px 25px 0 rgba(41, 52, 73, 0.5);
+}
+
+.popular-producers-item:active {
+    box-shadow: 0px 4px 10px 0 rgba(41, 52, 73, 0.5);
+    opacity: 0.3;
 }
 
 .services {
