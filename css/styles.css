@@ -812,6 +812,30 @@ img {
     line-height: 22px;
 }
 
+.services-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.services-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.services-nav-item button {
+    background-color: #32425c;
+}
+
+.services-nav-item button:hover,
+.services-nav-item button:focus {
+    background-color: #293449;
+}
+
+.services-nav-item-current {
+    background-color: #ffffff;
+}
+
 .services-list {
     margin: 0;
     padding: 0;
@@ -824,19 +848,9 @@ img {
     background-color: #32425c;
 }
 
-.services-item button:hover,
-.services-item button:focus {
-    background-color: #293449;
-}
-
-.services-item .services-description {
+.services-item:nth-child(2) .services-description,
+.services-item:nth-child(3) .services-description {
     display: none;
-}
-
-.services-item .services-item-current {
-    display: block;
-    color: #32425c;
-    background-color: #ffffff;
 }
 
 .services-description h3 {
