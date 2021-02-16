@@ -1,53 +1,51 @@
-"use strict";
+const gulp = require("gulp");
+const plumber = require("gulp-plumber");
+const sourcemap = require("gulp-sourcemaps");
+const less = require("gulp-less");
+const postcss = require("gulp-postcss");
+const autoprefixer = require("autoprefixer");
+const sync = require("browser-sync").create();
 
-var gulp = require("gulp");
-var rename = require("gulp-rename");
-var svgstore = require("gulp-svgstore");
-var postcss = require("gulp-postcss");
-var posthtml = require("gulp-posthtml");
-var include = require("posthtml-include");
-var autoprefixer = require("autoprefixer");
-var csso = require("gulp-csso");
-var server = require("browser-sync").create();
+// Styles
 
-gulp.task("css", function () {
-  return gulp.src("source/css/styles.css")
-    // .pipe(postcss([
-    //   autoprefixer()
-    // ]))
-    // .pipe(gulp.dest("source/css"))
-    // .pipe(server.stream())
-    // .pipe(csso())
-    // .pipe(rename("styles.min.css"))
-    // .pipe(gulp.dest("source/css"))
-    // .pipe(server.stream());
-});
-
-gulp.task("server", function () {
-  server.init({
-    server: "./",
-    notify: false,
-    open: true,
-    cors: true,
-    ui: false
-  });
-  gulp.watch("css/styles.css", gulp.series("css"));
-  gulp.watch("*.html").on("change", server.reload);
-});
-
-gulp.task("sprite", function () {
-  return gulp.src("source/img/icon-*.svg")
-    .pipe(svgstore({
-      inlineSvg: true
-    }))
-    .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("source/img"));
-});
-
-gulp.task("html", function () {
-  return gulp.src("source/index.html")
-    .pipe(posthtml([
-        include()
+const styles = () => {
+  return gulp.src("source/less/style.less")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(less())
+    .pipe(postcss([
+      autoprefixer()
     ]))
-    .pipe(gulp.dest("source"));
-});
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("source/css"))
+    .pipe(sync.stream());
+}
+
+exports.styles = styles;
+
+// Server
+
+const server = (done) => {
+  sync.init({
+    server: {
+      baseDir: 'source'
+    },
+    cors: true,
+    notify: false,
+    ui: false,
+  });
+  done();
+}
+
+exports.server = server;
+
+// Watcher
+
+const watcher = () => {
+  gulp.watch("source/less/**/*.less", gulp.series("styles"));
+  gulp.watch("source/*.html").on("change", sync.reload);
+}
+
+exports.default = gulp.series(
+  styles, server, watcher
+);
