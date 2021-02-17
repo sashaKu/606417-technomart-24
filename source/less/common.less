@@ -11,7 +11,7 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Cuprum", "Arial", sans-serif;
+  font-family: "Cuprum", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -23,4 +23,27 @@ a {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.hg {
+  display: grid;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
+}
+
+header {
+  grid-area: header;
+  background-color: @color-basic-background;
+}
+
+main {
+  grid-area: main;
+  background-color: @color-white;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #32425C;
 }
