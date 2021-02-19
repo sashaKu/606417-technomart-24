@@ -28,13 +28,13 @@
             </svg>
           </a>
           <form class="header__search search" action="https://echo.htmlacademy.ru" method="post">
-            <button class="search__button" aria-label="Поиск">
+            <input class="search__input" type="search" name="search" placeholder="Поиск:">
+            <button class="search__button" type="submit" aria-label="Поиск">
               <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" viewBox="0 0 17 17">
                 <path fill="#ffffff"
                   d="M17 15.586l-3.542-3.542A7.465 7.465 0 0 0 15 7.5 7.5 7.5 0 1 0 7.5 15c1.71 0 3.282-.579 4.544-1.542L15.586 17 17 15.586zM2 7.5C2 4.467 4.467 2 7.5 2 10.532 2 13 4.467 13 7.5c0 3.032-2.468 5.5-5.5 5.5A5.506 5.506 0 0 1 2 7.5z" />
                 </svg>
             </button>
-            <input type="search__input" name="search" placeholder="Поиск:">
           </form>
           <a class="header__bookmark" href="#">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
@@ -51,8 +51,8 @@
           <a class="header__order" href="#">Оформить заказ</a>
         </div>
       </div>
-      <div class="header__middle">
-        <h1 class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</h1>
+      <div class="header__middle wrapper">
+        <p class="header__title">Интернет-магазин строительных материалов и инструментов для ремонта</p>
         <address class="header__address">
           <a class="header__address-phone" href="tel:+78125550555">
             <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19">
@@ -65,7 +65,7 @@
         </address>
         <ul class="header__authorization authorization">
           <li>
-            <a class="authorization__auth-link" href="#">
+            <a class="authorization__link authorization__auth-link" href="#">
               <svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17">
                 <path fill="#c5c5c5" d="M14.875 8.5L6 0v6H0v5h6v6z" />
                 <path fill="#c5c5c5" d="M16.986 15.01h-5.027V17h5.027c2.178 0 3.004-1.81 3.029-3.026V3.028C19.99 1.811 19.164 0 16.986 0h-5.027v1.99h5.027c.839 0 .992.681 1.01 1.057v10.904c-.017.376-.171 1.059-1.01 1.059z" />
@@ -74,11 +74,11 @@
             </a>
           </li>
           <li>
-            <a class="authorization__reg-link" href="#">Регистрация</a>
+            <a class="authorization__link authorization__reg-link" href="#">Регистрация</a>
           </li>
         </ul>
       </div>
-      <nav class="header__navigation navigation">
+      <nav class="header__navigation navigation wrapper">
         <ul class="navigation__list">
           <li>
             <a>Главная</a>
@@ -105,6 +105,7 @@
       </nav>
     </header>
     <main>
+      <h1 class="visually-hidden">Интернет-магазин "Техномарт"</h1>
       <section class="advantage">
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantage__list">

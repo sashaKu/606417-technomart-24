@@ -362,6 +362,7 @@ img {
 }
 header {
   grid-area: header;
+  padding-bottom: 60px;
   background-color: #F1F5F7;
 }
 main {
@@ -388,7 +389,7 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 .wrapper {
-  width: 900px;
+  width: 980px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -406,8 +407,45 @@ input[type="radio"].visually-hidden {
 .modal {
   display: none;
 }
+.authorization {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  list-style: none;
+  font-size: 21px;
+  line-height: 21px;
+}
+.authorization li {
+  margin-right: 10px;
+}
+.authorization li:last-child {
+  margin-right: 0;
+}
+.authorization__link {
+  display: flex;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+  padding-right: 27px;
+  flex-direction: row;
+  align-items: center;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.authorization__auth-link svg {
+  width: 20px;
+  height: 17px;
+  margin-right: 6px;
+}
+.authorization__reg-link {
+  padding-left: 24px;
+  padding-right: 24px;
+}
 .header__top {
-  min-height: 42px;
+  margin-bottom: 46px;
   background-color: #293449;
 }
 .header__top-box {
@@ -435,11 +473,157 @@ input[type="radio"].visually-hidden {
   position: absolute;
   bottom: -5px;
 }
+.header__bookmark,
+.header__basket,
+.header__order {
+  display: flex;
+  height: 42px;
+  padding-left: 20px;
+  padding-right: 20px;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  line-height: 18px;
+  color: #FFFFFF;
+}
+.header__bookmark span,
+.header__basket span,
+.header__order span {
+  padding-left: 9px;
+}
+.header__bookmark svg {
+  width: 14px;
+  height: 16px;
+}
+.header__basket svg {
+  width: 15px;
+  height: 15px;
+}
+.header__order {
+  background-color: #63A63E;
+}
+.header__middle {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 .header__title {
+  margin: 0;
+  width: 260px;
+  padding: 30px;
+  padding-top: 0;
   font-size: 16px;
-  line-height: 1;
+  line-height: 23px;
   font-style: italic;
   color: #EE3643;
+}
+.header__address-phone {
+  display: flex;
+  width: 270px;
+  margin-bottom: 3px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 35px;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid #FFFFFF;
+  font-size: 21px;
+  line-height: 21px;
+  font-weight: 700;
+  font-style: normal;
+  color: #EE3643;
+}
+.header__address-phone svg {
+  display: block;
+  width: 19px;
+  height: 19px;
+  margin-right: 16px;
+}
+.header__address-info {
+  margin: 0;
+  font-size: 14px;
+  line-height: 24px;
+  font-style: normal;
+}
+.navigation {
+  font-size: 16px;
+}
+.navigation__list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-direction: row;
+  justify-content: flex-end;
+  list-style: none;
+  background-color: #32425C;
+  box-shadow: inset 0px -5px 0px #293449;
+}
+.navigation__list li {
+  width: 100%;
+  margin-right: 10px;
+}
+.navigation__list li:last-child {
+  margin-right: 0;
+}
+.navigation__list a {
+  display: inline-block;
+  padding-left: 30px;
+  padding-right: 25px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: #FFFFFF;
+}
+.search {
+  display: flex;
+  flex-direction: row-reverse;
+  margin: 0;
+  padding: 0;
+}
+.search__button {
+  display: flex;
+  width: 42px;
+  height: 42px;
+  padding: 0;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #293449;
+  border: none;
+}
+.search__button svg {
+  width: 17px;
+  height: 17px;
+}
+.search__input {
+  padding: 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  background-color: #293449;
+  color: #FFFFFF;
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 18px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.search__input::-moz-placeholder {
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #293449;
+  color: #FFFFFF;
+}
+.search__input::placeholder {
+  font-family: "Cuprum", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #293449;
+  color: #FFFFFF;
 }
 
 /*# sourceMappingURL=style.css.map */
