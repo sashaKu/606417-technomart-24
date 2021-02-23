@@ -1,0 +1,114 @@
+.advantage__list {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  grid-template-columns: [slider-column-start] 1fr 1fr [slider-column-end] 1fr;
+  grid-template-rows: 1fr [slider-row-start] 1fr 1fr [slider-row-end];
+  gap: 20px;
+  list-style: none;
+}
+
+.advantage__item {
+  display: flex;
+  min-height: 123px;
+  padding: 20px;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  top: 0;
+  right: 0;
+}
+
+.advantage__item:nth-child(1) {
+  background-color: @color-warning;
+}
+
+.advantage__item:nth-child(2) {
+  background-color: @color-special-blue;
+}
+
+.advantage__item:nth-child(3) {
+  background-color: @color-special-lilac;
+}
+
+.advantage__item:nth-child(4) {
+  background-color: @color-special-greenlight;
+}
+
+.advantage__item:nth-child(5) {
+  background-color: @color-warning;
+}
+
+.advantage__item-title {
+  margin: 0;
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: @color-white;
+}
+
+.advantage__item-label {
+  width: 70px;
+  height: 70px;
+  padding-top: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 14px;
+  line-height: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: @color-white;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.advantage__item-label::before {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background: rgb(255,255,255);
+  background: linear-gradient(-45deg, rgba(255,255,255,0) 60%, rgba(238,54,67,1) 60%, rgba(238,54,67,1) 90%, rgba(255,255,255,0) 90%);
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform: rotate(45deg);
+  z-index: -1;
+}
+
+.advantage__item-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.advantage__button {
+  min-width: 135px;
+  width: auto;
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 22px;
+  padding-right: 22px;
+  padding-bottom: 10px;
+  background-color: rgba(255,255,255, 0.3);
+}
+
+.advantage__item-svg {
+  align-self: center;
+  fill: @color-white;
+  margin-right: 20px;
+}
+
+.advantage__item-svg-landscape {
+  margin-right: 10px;
+}
+
+.advantage__item-slider {
+  grid-column: slider-column-start / slider-column-end;
+  grid-row: slider-row-start / slider-row-end;
+  padding: 0;
+}

@@ -1,0 +1,139 @@
+.slider {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  position: relative;
+}
+
+.slider__content {
+  width: 100%;
+  height: 100%;
+  overflow-x: scroll;
+  position: relative;
+}
+
+.slider__list {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  white-space: nowrap;
+}
+
+.slider__item {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.slider__item-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+}
+
+.slider__item-content {
+  height: 100%;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.slider__item-description {
+  position: relative;
+}
+
+.slider__item-title {
+  margin: 0;
+  margin-bottom: 5px;
+  font-size: 36px;
+  line-height: 36px;
+  font-weight: 700;
+  color: @color-white;
+}
+
+.slider__item-text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 24px;
+  color: @color-white;
+}
+
+.slider__button {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 46px;
+  padding-right: 46px;
+  padding-bottom: 10px;
+  background-color: @color-basic-red;
+  position: relative;
+}
+
+.slider__nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.slider__nav-item {
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%);
+}
+
+.slider__nav-item:last-child {
+  right: 35px;
+  left: auto;
+}
+
+.slider__nav-button {
+  padding: 10px;
+  border: none;
+  background-color: inherit;
+}
+
+.slider__marker-list {
+  display: flex;
+  margin: auto;
+  padding: 0;
+  list-style: none;
+  flex-direction: row;
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slider__marker-item {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: @color-white;
+  position: relative;
+}
+
+.slider__marker-item:last-child {
+  margin-right: 0;
+}
+
+.slider__marker-item--current::after {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: @color-basic-red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
