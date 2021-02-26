@@ -161,10 +161,10 @@
             </svg>
           </li>
           <li class="advantage__item advantage__item-slider">
-            <div class="slider">
-              <div class="slider__content" role="region" aria-label="Слайдер" tabindex="0">
-                <ul class="advantage__slider slider__list">
-                  <li class="slider__item">
+            <div class="slider splide" role="region" aria-label="Слайдер">
+              <div class="slider__content splide__track">
+                <ul class="advantage__slider slider__list splide__list">
+                  <li class="slider__item splide__slide">
                     <picture>
                       <source type="image/webp" srcset="img/Slider_1.webp">
                       <img class="slider__item-img" src="img/Slider_1.png" alt="Строитель сверлит стену шуроповертом">
@@ -177,7 +177,7 @@
                       <a class="button slider__button" href="catalog.html">Открыть каталог</a>
                     </div>
                   </li>
-                  <li class="slider__item ">
+                  <li class="slider__item splide__slide">
                     <picture>
                       <source type="image/webp" srcset="img/Slider_2.webp">
                       <img class="slider__item-img" src="img/Slider_2.png" alt="Строитель сверлит стену перфоратором">
@@ -192,26 +192,6 @@
                   </li>
                 </ul>
               </div>
-              <ul class="slider__nav-list">
-                <li class="slider__nav-item">
-                  <button class="slider__nav-button" type="button" name="button" aria-label="Влево">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
-                      <path fill="#FFF" d="M19.83-.035l2.089 2.099L4.13 19.947l17.847 17.939-2.09 2.099L-.048 19.947z"/>
-                    </svg>
-                  </button>
-                </li>
-                <li class="slider__nav-item">
-                  <button class="slider__nav-button" type="button" name="button" aria-label="Вправо">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="40" viewBox="0 0 22 40">
-                      <path fill="#FFF" d="M2.098-.035L.009 2.064l17.789 17.883L-.048 37.886l2.089 2.099 19.935-20.038z"/>
-                    </svg>
-                  </button>
-                </li>
-              </ul>
-              <ul class="slider__marker-list">
-                <li class="slider__marker-item slider__marker-item--current"></li>
-                <li class="slider__marker-item"></li>
-              </ul>
             </div>
           </li>
         </ul>
@@ -589,6 +569,8 @@
       </svg>
     </button>
   </section>
+  <script src="js/splide.min.js"></script>
+  <script src="js/splide.js"></script>
 </body>
 
 </html>

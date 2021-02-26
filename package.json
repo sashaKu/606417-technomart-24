@@ -37,5 +37,8 @@
   ],
   "engines": {
     "node": "14.15.0"
+  },
+  "dependencies": {
+    "@splidejs/splide": "^2.4.21"
   }
 }

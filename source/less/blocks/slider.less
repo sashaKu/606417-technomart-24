@@ -8,7 +8,6 @@
 .slider__content {
   width: 100%;
   height: 100%;
-  overflow-x: scroll;
   position: relative;
 }
 
@@ -18,14 +17,16 @@
   margin: 0;
   padding: 0;
   list-style: none;
-  white-space: nowrap;
 }
 
 .slider__item {
-  display: inline-block;
   width: 100%;
   height: 100%;
   position: relative;
+}
+
+.slider__item--hidden {
+  display: none;
 }
 
 .slider__item-img {
@@ -75,28 +76,43 @@
   position: relative;
 }
 
-.slider__nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.slider__nav-item {
-  position: absolute;
-  top: 50%;
-  left: 35px;
-  transform: translate(-50%, -50%);
-}
-
-.slider__nav-item:last-child {
-  right: 35px;
-  left: auto;
-}
-
-.slider__nav-button {
+.slider__nav-prev {
   padding: 10px;
   border: none;
   background-color: inherit;
+  position: absolute;
+  top: 50%;
+  left: 35px;
+  transform: translate(-50%, -50%) rotate(180deg);
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+    opacity: 0.6;
+  }
+}
+
+.slider__nav-next {
+  padding: 10px;
+  border: none;
+  background-color: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+
+  &:hover {
+    cursor: pointer;
+
+  }
+}
+
+.slider__nav-arrows {
+  svg {
+    width: 30px;
+    fill: @color-white;
+  }
 }
 
 .slider__marker-list {
@@ -106,34 +122,50 @@
   list-style: none;
   flex-direction: row;
   position: absolute;
-  bottom: 30px;
+  bottom: 15px;
   left: 50%;
   transform: translate(-50%, -50%);
+
+  li {
+    margin-right: 10px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
 }
 
 .slider__marker-item {
   display: block;
   width: 10px;
   height: 10px;
-  margin-right: 10px;
+  padding: 0;
+  border: none;
   border-radius: 50%;
   background: @color-white;
   position: relative;
+
+  &:hover {
+    cursor: pointer;
+
+  }
 }
 
-.slider__marker-item:last-child {
-  margin-right: 0;
-}
+.slider__marker-item.is-active {
+  &:hover {
+    cursor: default;
+  }
 
-.slider__marker-item--current::after {
-  content: "";
-  display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  background: @color-basic-red;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  &::after {
+    content: "";
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: @color-basic-red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
 }
