@@ -1,0 +1,49 @@
+.action {
+  display: none;
+  width: 218px;
+  height: 170px;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  background-color: @color-white;
+}
+
+.action__item {
+  margin-bottom: 10px;
+}
+
+.action__item:last-child {
+  margin-bottom: 0;
+}
+
+.action__button-buy,
+.action__button-buy-bookmark {
+  width: 135px;
+  height: 38px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.action__button-buy, {
+  font-size: 14px;
+  line-height: 18px;
+  color: @color-white;
+  text-transform: uppercase;
+  background-color: @color-basic-green;
+  box-shadow: inset 0px -3px 0px #367315;
+
+  svg {
+    margin-right: 5px;
+    opacity: 0.3;
+  }
+}
+
+.action__button-buy-bookmark {
+  background-color: @color-white;
+  color: #32425C;
+  border: 3px solid @color-basic-green;
+}
