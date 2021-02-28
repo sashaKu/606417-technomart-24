@@ -318,94 +318,98 @@
           </li>
         </ul>
       </section>
-      <section class="producers">
-        <h2 class="producers__title">Популярные производители:</h2>
+      <section class="producers wrapper">
+        <div class="producers__title-box">
+          <h2 class="producers__title title">Популярные производители:</h2>
+          <a class="button producers__button" href="#">Все производители</a>
+        </div>
         <ul class="producers__list">
           <li class="producers__item">
-            <a href="#">
-              <img src="img/bosch.png" width="126" height="37" alt="Bosh">
+            <a class="producers__link" href="#">
+              <img class="producers__img" src="img/bosch.png" width="126" height="37" alt="Bosh">
             </a>
           </li>
           <li class="producers__item">
-            <a href="#">
-              <img src="img/Makita.png" width="133" height="40" alt="Makita">
+            <a class="producers__link" href="#">
+              <img class="producers__img" src="img/Makita.png" width="133" height="40" alt="Makita">
             </a>
           </li>
           <li class="producers__item">
-            <a href="#">
-              <img src="img/Dewalt.png" width="146" height="44" alt="Dewalt">
+            <a class="producers__link" href="#">
+              <img class="producers__img" src="img/Dewalt.png" width="146" height="44" alt="Dewalt">
             </a>
           </li>
           <li class="producers__item">
-            <a href="#">
-              <img src="img/Интерскол.png" width="200" height="88" alt="Интерскол">
+            <a class="producers__link" href="#">
+              <img class="producers__img" src="img/Интерскол.png" width="200" height="88" alt="Интерскол">
             </a>
           </li>
           <li class="producers__item">
-            <a href="#">
-              <img src="img/Hitachi.png" width="169" height="31" alt="Hitachi">
+            <a class="producers__link" href="#">
+              <img class="producers__img" src="img/Hitachi.png" width="169" height="31" alt="Hitachi">
             </a>
           </li>
           <li class="producers__item">
-            <a href="#">
-              <img src="img/LG.png" width="121" height="73" alt="LG">
+            <a class="producers__link" href="#">
+              <img class="producers__img" src="img/LG.png" width="121" height="73" alt="LG">
             </a>
           </li>
           <li class="producers__item">
-            <a href="#">
-              <img src="img/AEG.png" width="151" height="96" alt="AEG">
+            <a class="producers__link" href="#">
+              <img class="producers__img" src="img/AEG.png" width="151" height="96" alt="AEG">
             </a>
           </li>
           <li class="producers__item">
-            <a href="#">
-              <img src="img/Metabo.png" width="204" height="69" alt="Metabo">
+            <a class="producers__link" href="#">
+              <img class="producers__img" src="img/Metabo.png" width="204" height="69" alt="Metabo">
             </a>
           </li>
         </ul>
-        <a class="button producers__button" href="#">Все производители</a>
       </section>
       <section class="services">
-        <h2 class="services__title">Сервисы</h2>
-        <p class="services__text">
-          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
-        </p>
-        <div class="services__info">
+        <div class="services__title-box wrapper">
+          <h2 class="services__title title">Сервисы</h2>
+          <p class="services__text">
+            Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+          </p>
+        </div>
+        <div class="services__info wrapper">
           <ul class="services__nav-list">
-            <li class="services__nav-item services__nav-item--current">
-              <button type="button">Доставка</button>
+            <li class="services__nav-item">
+              <button class="services__nav-button services__nav-button--current" type="button">Доставка</button>
             </li>
-            <li>
-              <button class="services__nav-item" type="button">Гарантия</button>
+            <li class="services__nav-item">
+              <button class="services__nav-button" type="button">Гарантия</button>
             </li>
-            <li>
-              <button class="services__nav-item" type="button">Кредит</button>
+            <li class="services__nav-item">
+              <button class="services__nav-button" type="button">Кредит</button>
             </li>
           </ul>
           <ul class="services__list">
-            <li class="services__item services__item--current">
+            <li class="services__item services__item--car">
               <div class="services__description">
-                <h3>Доставка</h3>
-                <p>
+                <h3 class="services__title title">Доставка</h3>
+                <p class="services__text">
                   Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж!
                 </p>
               </div>
             </li>
-            <li class="services__item">
+            <li class="services__item services__item--many">
               <div class="services__description">
-                <h3>Гарантия</h3>
-                <p>
+                <h3 class="services__title title">Гарантия</h3>
+                <p class="services__text">
                   Если купленный у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгаранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый. Дом уж восстановите как-нибудь
                   сами.
                 </p>
               </div>
             </li>
-            <li class="services__item">
+            <li class="services__item services__item--medal services__item--current">
               <div class="services__description">
-                <h3>Кредит</h3>
-                <p>
+                <h3 class="services__title title">Кредит</h3>
+                <p class="services__text">
                   Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.
-                  <button class="button services__button" type="button">Отправить заявку</button>
                 </p>
+                <button class="button services__button" type="button">Отправить заявку</button>
               </div>
             </li>
           </ul>
@@ -582,6 +586,43 @@
   </section>
   <script src="js/splide.min.js"></script>
   <script src="js/splide.js"></script>
+  <script >
+    const box = document.querySelector(".services__info");
+    const buttonList = box.querySelector(".services__nav-list");
+    const buttons = buttonList.querySelectorAll(".services__nav-button");
+    const buttonCurrent = buttonList.querySelector(".services__nav-button--current");
+    const contentList = box.querySelector(".services__list");
+
+    let index = function(collection, classCurrent) {
+      let indexNumber = 0;
+
+      for (const item of collection) {
+        indexNumber += 1;
+        console.log(item);
+        if (item.classList === classCurrent) {
+          return indexNumber;
+        }
+
+        return 0;
+      }
+    }
+
+    buttonList.addEventListener('click', ({ target }) => {
+
+     if (target.tagName === "BUTTON") {
+
+       for (const button of buttons) {
+         button.classList.remove("services__nav-button--current");
+       }
+
+       target.classList.add("services__nav-button--current");
+
+       index(buttons, buttonCurrent);
+       console.log(index(buttons, buttonCurrent));
+     }
+
+   });
+  </script>
 </body>
 
 </html>
