@@ -386,7 +386,7 @@
             </li>
           </ul>
           <ul class="services__list">
-            <li class="services__item services__item--car">
+            <li class="services__item services__item--car services__item--current">
               <div class="services__description">
                 <h3 class="services__title title">Доставка</h3>
                 <p class="services__text">
@@ -403,7 +403,7 @@
                 </p>
               </div>
             </li>
-            <li class="services__item services__item--medal services__item--current">
+            <li class="services__item services__item--medal">
               <div class="services__description">
                 <h3 class="services__title title">Кредит</h3>
                 <p class="services__text">
@@ -586,43 +586,7 @@
   </section>
   <script src="js/splide.min.js"></script>
   <script src="js/splide.js"></script>
-  <script >
-    const box = document.querySelector(".services__info");
-    const buttonList = box.querySelector(".services__nav-list");
-    const buttons = buttonList.querySelectorAll(".services__nav-button");
-    const buttonCurrent = buttonList.querySelector(".services__nav-button--current");
-    const contentList = box.querySelector(".services__list");
-
-    let index = function(collection, classCurrent) {
-      let indexNumber = 0;
-
-      for (const item of collection) {
-        indexNumber += 1;
-        console.log(item);
-        if (item.classList === classCurrent) {
-          return indexNumber;
-        }
-
-        return 0;
-      }
-    }
-
-    buttonList.addEventListener('click', ({ target }) => {
-
-     if (target.tagName === "BUTTON") {
-
-       for (const button of buttons) {
-         button.classList.remove("services__nav-button--current");
-       }
-
-       target.classList.add("services__nav-button--current");
-
-       index(buttons, buttonCurrent);
-       console.log(index(buttons, buttonCurrent));
-     }
-
-   });
-  </script>
+  <script src="js/toogle-services.js"></script>
 </body>
 
 </html>

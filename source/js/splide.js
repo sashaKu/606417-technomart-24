@@ -1,4 +1,4 @@
-new Splide( '.splide', {
+new Splide('.splide', {
 
 	classes: {
 
